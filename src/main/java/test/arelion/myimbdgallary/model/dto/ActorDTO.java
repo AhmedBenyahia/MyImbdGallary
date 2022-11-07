@@ -17,6 +17,4 @@ public class ActorDTO {
     @JsonProperty("name")
     String primaryName;
 
-//    private Set<MovieDTO> bestMovies = new LinkedHashSet<>();
-//    private Set<MovieCastDTO> movieCasts = new LinkedHashSet<>();
 }

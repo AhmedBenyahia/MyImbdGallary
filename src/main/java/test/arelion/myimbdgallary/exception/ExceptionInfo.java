@@ -1,6 +1,14 @@
 package test.arelion.myimbdgallary.exception;
 
-public class ExceptionInfo extends RuntimeException{
+/**
+ * The {@link ExceptionInfo } class.
+ * This abstract class hold generale information about exceptions
+ * All custom exception in the application extend it.
+ *
+ * @author AhmedBenyahia
+ * @since 1.0.0
+ */
+public abstract class ExceptionInfo extends RuntimeException{
 
     private String message;
     private int status;

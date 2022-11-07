@@ -13,6 +13,14 @@ import test.arelion.myimbdgallary.service.PricingPlanService;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * The {@link RateLimitInterceptor } class.
+ * This class verify that an API key is provided in the header.
+ * Then check the rate limit depending on the use subscription type.
+ *
+ * @author AhmedBenyahia
+ * @since 1.0.0
+ */
 @Component
 public class RateLimitInterceptor implements HandlerInterceptor {
 

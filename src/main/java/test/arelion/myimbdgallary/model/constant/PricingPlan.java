@@ -19,6 +19,13 @@ public enum PricingPlan {
         this.bandwidth = bandwidth;
     }
 
+    /**
+     * Resolve pricing plan from api key.
+     * This method use the prefix of the key to identify the type of the plan
+     *
+     * @param apiKey the api key
+     * @return the pricing plan
+     */
     public static PricingPlan resolvePlanFromApiKey(String apiKey) {
         if (apiKey.startsWith(ImdbConstant.freePricingPlanApiKeyPrefix)) {
             return FREE;
